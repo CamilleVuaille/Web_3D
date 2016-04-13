@@ -1,0 +1,73 @@
+.hidden {
+	display: none;
+}
+
+body {
+	background: url(../../../../../../Users/Boss/Desktop/site/fond.png);
+}
+
+.accueil div, .choixLvl div, .connexionInscription div {
+	text-align: center;
+}
+.accueil a{
+	display: block;
+	text-align: center;
+}
+
+.message {
+	color: white;
+	margin: 0 auto;
+	width: 60%;
+}
+
+.button {
+	display: block;
+	width: 150px;
+	height: 50px;
+	background-color: #fad069;
+	color: black;
+	border: none;
+	border-radius: 5%;
+	margin: 20px auto;
+}
+
+
+.forms {
+	background-color: #fad069;
+	border-radius: 30px;
+	width: 50%;
+	height: 300px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.forms input {
+	display: block;
+	background: #89572e;
+	border: none;
+	padding: 1em;
+	margin: 1em;
+	border-radius: 10px;
+}
+
+.rule {
+	border: 2px solid  #89572e;
+	height: 150px;
+}
+
+.messageLeSaviezVous {
+	background-color: #fad069;
+	border-radius: 30px;
+	width: 50%;
+	height: 300px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.messageLeSaviezVous p, .messageLeSaviezVous h2{
+	width: 100%;
+	text-align: center;
+}
