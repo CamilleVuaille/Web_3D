@@ -13,7 +13,7 @@ $app->get('/', function () {
     
     
     //variable contenant les données necessaire extraite de la base de ddonnée
-    require '../src/model.php';
+    require '../model/User.php';
     
 
     ob_start();             // start buffering HTML output
