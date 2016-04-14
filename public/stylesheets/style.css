@@ -230,21 +230,23 @@ strong {
 	margin-bottom: 180px;
 }
 
-.column_profil {
+.profil {
     color: #fff;
     font-size: 18px;
     line-height: 40px;
 }
 
-.column_profil p{
-    float: left;
+.profil p{
+   /* float: left;*/
+   width: 350px;
 }
 
 .pencil {
     margin-left: 20px;
-    width: 50px;
-    float: left;
+    width: 30px;
+    /*float: left;*/
     cursor: pointer;
+    vertical-align: middle;
 }
 
 .honey {
@@ -259,7 +261,7 @@ strong {
 .success {
     background-color: #89572e;
     border-radius: 35px;
-    width: 488px;
+    width: 350px;
     height: 100px;
     margin: 0 auto;
     display: flex;
@@ -267,19 +269,19 @@ strong {
     justify-content: center;
     margin-top: -25px;
 margin-left: 345px;
-	position:relative;
-	z-index: 4;
+    position:relative;
+    z-index: 4;
 }
 
 .success_h2 {
-	font-family: "Debby";
+    font-family: "Debby";
     width: 100px;
     color: #fff;
-	position: absolute;
-	opacity:0.9;
+    position: absolute;
+    opacity:0.9;
     font-size: 50px;
-	margin-top: -30px;
-	margin-left: -90px;
+    margin-top: -30px;
+    margin-left: -90px;
 }
 
 .column h2 {
@@ -291,8 +293,8 @@ margin-left: 345px;
 
 
 .rule {
-	border: 2px solid #89572e;
-	height: 210px;
+    border: 2px solid #89572e;
+    height: 210px;
     margin-left: 20px;
     margin-right: 20px;
 }

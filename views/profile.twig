@@ -5,6 +5,9 @@
     <title>Semaine Intensive 3D</title>
     <link rel="stylesheet" href="../public/stylesheets/reset.css">
     <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link rel="stylesheet" href="../public/stylesheets/tooltip.css">
+    <script src="../public/Javascript/tooltip.js"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -19,10 +22,19 @@
             <img src="../public/img/avatar.png" class="avatar">
 
         </div>
-        <div class="column_profil">
-
-            <p><strong>Mot de passe : </strong>XXXXXXXXXXXXXXX</p><span><img src="../public/img/pencil.png" class="pencil"></span>
-            <p><strong>Email : </strong>XXXXXXXXXXXXXXX</p><span><img src="../public/img/pencil.png" class="pencil"></span>
+        <div class="profil" id="profil">
+            <p>
+                <strong>Mot de passe : </strong>
+                <span>XXXXXXX</span>
+                <img src="../public/img/pencil.png" class="pencil" id="pen1">
+            </p>
+            
+            <p>
+                <strong>Email : </strong>
+                <span>XXXXX</span>
+                <img src="../public/img/pencil.png" class="pencil" id="pen2">
+            </p>
+            
 
         </div>
     </div>
@@ -30,16 +42,40 @@
 
     <div class="success">
         <div class="success_h2"><h2>Success</h2></div>
-        <img src="../public/img/honey_black.png" class="honey">
-        <img src="../public/img/honey_color.png" class="honey2">
-        <img src="../public/img/honey_color.png" class="honey2">
-        <img src="../public/img/honey_black.png" class="honey2">
-        <img src="../public/img/honey_black.png" class="honey2">
-    </div>
+            
+            <!-- honey 1-->
+            <a class="tooltip" href="#demo2_tip" onmouseover="tooltip.pop(this, '#tip2')"><img src="../public/img/iconeEnvironnement.png" class="honey"></a>
+            <div style="display:none;">
+              <div id="tip2">
+                <img src="#"/>
+                <p>Lorem</p>
+            </div>
+            </div>
+            
+             <!-- honey 2-->
+            <a class="tooltip" href="#demo2_tip" onmouseover="tooltip.pop(this, '#tip2')"><img src="../public/img/iconeAbeille.png" class="honey2"></a>
+            <div style="display:none;">
+              <div id="tip2">
+                <img src="#"/>
+                <p>Lorem</p>
+            </div>
+            </div>
+            
+             <!-- honey 3-->
+            <a class="tooltip" href="#demo2_tip" onmouseover="tooltip.pop(this, '#tip2')"><img src="../public/img/iconeFleur.png" class="honey2"></a>
+            <div style="display:none;">
+              <div id="tip2">
+                <img src="#"/>
+                <p>Lorem</p>
+            </div>
+            </div>
+           
+        </div>
+        </div>
 </div>
 
 
 
-
+<script src="../public/Javascript/unity.js"></script>
 </body>
 </html>
