@@ -9,6 +9,7 @@
 namespace Model\Base;
 
 
+
 /**
  * Class Main
  * @package Model\Base
@@ -25,4 +26,5 @@ class Main
     {
         $this->$db = $db;
     }
+    
 }

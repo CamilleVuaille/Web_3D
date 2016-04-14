@@ -1,19 +1,44 @@
+@font-face{
+	font-family: "Debby";
+	src: url('../font/Debby/Debby.ttf');
+}
+@font-face{
+	font-family: "Debby";
+	src: url('../font/Debby/Debby.otf');
+}
+.image{
+	width:900px;
+	margin:0 auto;
+	margin-bottom: 3%;
+}
 .hidden {
 	display: none;
+	font-family: "Debby";
+}
+a {
+    text-decoration:none ;
 }
 
 body {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background: url(../img/background.png) no-repeat center fixed;
+	background: url(../img/backgroundblack.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	font-family: "Open Sans", sans-serif;
+	font-weight:400;
+	overflow: hidden;
 }
 
 .bee {
 	text-align: center;
 }
-
+h1{
+	font-family: "Debby";
+	font-size: 266px;
+	color: #FFFFFF;
+	opacity: 0.6;
+}
 .accueil {
     margin-bottom: 100px;
 }
@@ -22,14 +47,17 @@ body {
 	display: block;
 	text-align: center;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
+	font-weight:700;
 }
 
 .message {
 	color: white;
 	margin: 0 auto;
 	width: 55%;
-    font-size: 25px;
+    font-size: 16px;
+	line-height: 1.5em;
+	text-align: justify;
     margin-top: 30px;
     margin-bottom: 65px;
 }
@@ -37,28 +65,49 @@ body {
 .message2 {
     color: white;
     margin: 0 auto;
-    font-size: 35px;
+    font-size: 26px;
+	font-weight: 300;
     margin-top: 50px;
-    margin-bottom: 65px;
+    margin-bottom: 45px;
     text-align: center;
 }
 
-.choixLvl {
-    margin-bottom: 120px;
-}
 
 /* Page connection */
+.form_conn{
+	background-color:rgba(240,197,41,0.7);
+    border-radius: 25px;
+    width: 525px;
+    height: 280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 5px #656565;
+    margin-top: 60px;
+}
+input::-webkit-input-placeholder {
+    color:#F0C529;
+	font-family: "Open Sans", sans-serif;
+}
+ 
+input:-moz-placeholder {
+    color:#F0C529;
+	font-family: "Open Sans", sans-serif;
+}
 
 .button {
     display: block;
     width: 200px;
     height: 50px;
-    background-color: #fad069;
-    color: black;
+    background-color: #F9CD2D;
+    color: #876126;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 20px auto;
-    font-size: 22px;
+    font-size: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
     box-shadow: 0px 1px 5px #656565;
     cursor: pointer;
 }
@@ -115,10 +164,11 @@ body {
 
 
 .forms {
-    background-color: #fad069;
-    border-radius: 10px;
-    width: 575px;
-    height: 300px;
+    background-color:#F0C529;
+	opacity:0.7;
+    border-radius: 25px;
+    width: 525px;
+    height: 200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -175,8 +225,9 @@ strong {
 }
 
 .avatar {
-    width: 290px;
-    margin-left: -145px;
+    width: 220px;
+    margin-left: -120px;
+	margin-bottom: 180px;
 }
 
 .column_profil {
@@ -214,15 +265,21 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -35px;
+    margin-top: -25px;
+margin-left: 345px;
+	position:relative;
+	z-index: 4;
 }
 
-.success_h1 {
+.success_h2 {
+	font-family: "Debby";
     width: 100px;
     color: #fff;
-    font-size: 35px;
-    margin-top: -45px;
-    position: absolute;
+	position: absolute;
+	opacity:0.9;
+    font-size: 50px;
+	margin-top: -30px;
+	margin-left: -90px;
 }
 
 .column h2 {
@@ -297,18 +354,22 @@ strong {
 }
 
 /* Game */
+.small_h1{
+	font-size: 124px;
+	margin-top: -30px;;
+}
 .forms_game {
     background-color: #89572e;
-    border-radius: 10px;
-    border: 20px solid #fad069;
-    width: 1075px;
-    height: 570px;
+    border-radius: 20px;
+    border: 20px solid #ECC22A;
+    width: 875px;
+    height: 470px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 1px 5px #656565;
-    margin-top: 60px;
+
 }
 
 .game_level {
@@ -334,21 +395,25 @@ strong {
 
 .avatar_game {
     width: 200px;
-    margin-left: -695px;
-    margin-top: -590px;
+    margin-left: -595px;
+    margin-top: -550px;
     float: left;
 }
 
 .p_game {
     font-size: 18px;
+	margin-top:70px;
+	margin-left: -20px;
 }
 
 .p_game2 {
     font-size: 18px;
     color: #fad069;
     background: #656565;
-    border-radius: 5px;
+    border-radius: 55px;
     padding: 5px 10px 25px 10px;
     height: 20px;
     width: 90px;
+	margin-left: -45px;
+	margin-bottom: 25px;
 }

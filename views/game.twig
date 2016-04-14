@@ -6,18 +6,17 @@
     <link rel="stylesheet" href="../public/stylesheets/reset.css">
     <link rel="stylesheet" href="../public/stylesheets/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-2.2.3.js" ></script>
 </head>
 <body>
 
 <!-- Level difficult -->
 <div class="choixLvl">
     <div class="image"><img src="../public/img/abeillefull.png" alt="Save the bees"></div>
-    <div class="bee"><h1 class="small_h1">Bee 'zz</h1></div>
+    <a href="profile"><div class="bee"><h1 class="small_h1">Bee 'zz</h1></div></a>
+
+
     <div class="forms_game">
-
-
-
-
         <img src="../public/img/avatar.png" class="avatar_game">
         <div class="column_game">
 
@@ -30,7 +29,14 @@
 </div>
 
 
-
+<script>
+    function GetScore(score)
+    {
+        $.ajax({url: "http://localhost:8888/WEB_3D/web/score:"+score+"", success: function(result){
+                console.log('salut');
+        }});
+    }
+</script>
 
 </body>
 </html>
