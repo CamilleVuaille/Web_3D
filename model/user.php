@@ -17,6 +17,9 @@ use Model\Base\Main;
  */
 class User extends Main
 {
-    
+    public function Get_user($id){
+        $sql = 'SELECT * FROM `user` WHERE `id` = '.$id.'';
+        $user = $app['db']->fetchAssoc($sql, array((int) $id));
+    }
 
 }

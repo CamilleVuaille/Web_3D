@@ -9,13 +9,27 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'strict_variables' => false,
 ));
 
+
 $app['debug'] = true;
 
 // Home page
-$app->get('/', function () use ($app) {
+$app->get('/home', function () use ($app) {
     return $app['twig']->render('home.twig');
 });
 
 $app->get('/level', function () use ($app) {
     return $app['twig']->render('level.twig');
+});
+
+$app->get('/game', function () use ($app) {
+    return $app['twig']->render('game.twig');
+});
+
+$app->get('/profile', function () use ($app) {
+
+    return $app['twig']->render('profile.twig');
+});
+
+$app->get('/score:{score}', function($score) use ($app){
+    return $score;
 });
