@@ -1,18 +1,52 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="../public/stylesheet/reset.css">
-    <link rel="stylesheet" href="../public/stylesheet/style.css">
+    <title>Semaine Intensive 3D</title>
+    <link rel="stylesheet" href="../public/stylesheets/reset.css">
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
 </head>
-<body>
-    <div class="accueil" id="accueil">
-        <div><img src="air.png" alt="Save the bees" style="width: 50%"><img src="abeille.png" alt=""></div>
-        <div><img src="titre.png" alt="Save the bees" style="width: 40%"></div>
-        <div class="message">De nature sociale, solitaire, sauvages ou domestiques. Les abeilles sont indispensables pour la biodiversité. Leur action de pollinisation est essentiel pour la reproduction des plantes. Toutefois, leur rôle est menacé par l'utilisation excessive de pesticides.</div>
-        <button class="button" id="start">On commence?</button>
-        <a href="#" id="aConnexion">Connexion / Inscription</a>
+<body style="background: url(../public/img/background.png) no-repeat center center fixed;" >
+<div class="accueil" id="accueil">
+    <div><img src="../public/img/air.png" alt="Save the bees" style="width: 50%"><img src="../public/img/abeille.png" alt=""></div>
+    <div class="bee"><img src="../public/img/titre.png" alt="Save the bees" style="width: 70%"></div>
+    <div class="message">De nature sociale, solitaire, sauvages ou domestiques. Les abeilles sont indispensables pour la biodiversité. Leur action de pollinisation est essentiel pour la reproduction des plantes. Toutefois, leur rôle est menacé par l'utilisation excessive de pesticides.</div>
+    <button class="button" id="start">On commence?</button>
+    <a href="#" id="aConnexion">Connexion / Inscription</a>
+</div>
+
+<!-- Connexion -->
+<div class="connexionInscription  hidden" id="connexionInscription">
+    <div><img src="../public/img/air.png" alt="Save the bees" style="width: 50%"><img src="../public/img/abeille.png" alt=""></div>
+    <div class="bee"><img src="../public/img/titre.png" alt="Save the bees" style="width: 40%"></div>
+    <div class="forms">
+        <div class="column">
+            <h2>DÉJÀ INSCRIT ?</h2>
+            <form id="connexion">
+                <input id="pseudo" type="text" placeholder="Pseudo" class="champs"/>
+                <input id="mdp" type="text" placeholder="Mot de passe" class="champs"/>
+                <input type="submit" value="Se connecter" class="validation">
+            </form>
+        </div>
+        <div class="rule"></div>
+        <div class="column">
+            <h2>INSCRIPTION</h2>
+            <form id="inscription">
+                <input id="email" type="text" placeholder="Email" class="champs"/>
+                <input id="mdp" type="text" placeholder="Mot de passe" class="champs"/>
+                <input id="mdp2" type="text" placeholder="Confirmation mot de passe" class="champs"/>
+                <input type="submit" value="S'inscrire" class="validation">
+            </form>
+
+        </div>
+
     </div>
+    <div class="social">
+        <button class="facebook"><img src="../public/img/Facebook.png" class="social_icons"><p class="p_social">Se connecter avec Facebook</p></button>
+        <button class="google"><img src="../public/img/Google_plus.png" class="social_icons"><p class="p_social">Se connecter avec Google +</p></button>
+    </div>
+</div>
+
+<script src="unity.js"></script>
 </body>
 </html>
